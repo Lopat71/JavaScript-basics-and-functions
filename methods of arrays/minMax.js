@@ -4,5 +4,14 @@
  * @return {number[]} - массив, содержащий наименьшее и наибольшее число в массиве
  */
 function minMax(arr) {
-    // ваш код здесь
+    if (arr.length === 0) {
+        return [];
+    }
+
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+
+    return [min, max];
 }
+
+console.log(minMax([1, 2, 3, 4, 5]));

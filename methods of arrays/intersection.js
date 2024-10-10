@@ -5,5 +5,7 @@
  * @return {number[]} - массив, содержащий только элементы, которые есть в обоих массивах
  */
 function intersect(arr1, arr2) {
-    // ваш код здесь
+    return arr1.filter((eltment) => arr2.includes(eltment));
 }
+
+console.log(intersect([1, 2, 3, 4], [2, 3, 5]));
